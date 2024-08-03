@@ -42,7 +42,7 @@ const Nav = () => {
     console.log('ok');
   }
   return (
-    <nav className="py-5 mx-4  border-b border-solid border-black relative  ">
+    <nav className="py-5 mx-4  border-b border-solid border-black relative">
       <Container>
         <div className='flex items-center justify-center md:justify-between'>
           <div className="logo">
