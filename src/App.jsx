@@ -8,6 +8,9 @@ import {
 import Error from './components/page/Error';
 import RootLayout from './components/page/RootLayout';
 import Home from './components/page/Home';
+import Contact from './components/page/Contact';
+import AboutUs from './components/page/AboutUs';
+import Menu from './components/page/Menu';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +21,9 @@ const router = createBrowserRouter(
     >
       <Route>
         <Route index element={<Home/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/about' element={<AboutUs/>} />
+        <Route path='/menu' element={<Menu/>} />
       </Route>
     </Route>
   )
@@ -25,7 +31,7 @@ const router = createBrowserRouter(
 
 const App = () => {
   return (
-    <div>
+    <div className='font-sand' >
       <RouterProvider router={router} />
     </div>
   )
