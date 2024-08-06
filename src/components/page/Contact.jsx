@@ -11,7 +11,7 @@ import PageTitle from '../layer/PageTitle';
 const Contact = () => {
   return (
     <div>
-      <PageTitle title={'Contact Us'}/>
+      <PageTitle title={'Contact Us ‖ Juicy Mama'}/>
       <Container>
         <div className="main mx-4">
             <div className="contactCard  mt-5 mx-auto max-w-[600px] ">

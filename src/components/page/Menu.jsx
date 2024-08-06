@@ -5,7 +5,7 @@ import PageTitle from '../layer/PageTitle'
 const Menu = () => {
   return (
     <div>
-      <PageTitle title={'Menu'}/>
+      <PageTitle title={'Menu ‖ Juicy Mama'}/>
       <Container>
         <p className='font-bold text-center capitalize py-5 text-2xl border-b border-black '>have look on our menu</p>
         <picture>

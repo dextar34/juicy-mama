@@ -7,7 +7,7 @@ import PageTitle from '../layer/PageTitle'
 const AboutUs = () => {
     return (
     <div className='py-5 '>
-      <PageTitle title={'Our Story'}/>
+      <PageTitle title={'Our Story ‖ Juicy Mama'}/>
       <Container>
       <p className='mx-5 my-6 text-center text-2xl md:text-4xl'>Welcome to <span className='font-bold' >Juicy Mama</span>, where freshness meets health in every sip!</p>
       <div className="story text-slate-700">

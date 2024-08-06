@@ -5,6 +5,7 @@ import Container from "./layer/Container";
 import List from "./layer/List";
 import cn from "../lib/cn";
 import { FaBars } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 const navData = [
   {
@@ -41,6 +42,8 @@ const Nav = () => {
     setShow(!show);
     console.log('ok');
   }
+
+  const location = useLocation();
   return (
     <nav className="py-5 mx-4  border-b border-solid border-black relative">
       <Container>
@@ -69,6 +72,7 @@ const Nav = () => {
                     'capitalize md:hover:underline md:hover:text-[#DD2D50] transition-all duration-300',
                     'md:py-2 md:px-3 md:rounded-xl',
                     'border-t border-b border-solid border-black   md:border-none',
+                    { 'text-orange-200 md:text-black md:bg-white': location.pathname == data.path }
                   )}
                 />
               ))}
