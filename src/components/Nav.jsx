@@ -40,7 +40,6 @@ const Nav = () => {
 
   let toggle = () => {
     setShow(!show);
-    console.log('ok');
   }
 
   const location = useLocation();
@@ -60,7 +59,7 @@ const Nav = () => {
             <ul
               className={ cn(
                 "flex lg:flex-row lg:gap-x-5 lg:static lg:text-3xl lg:w-full absolute z-10 right-0 !sm:-translate-x-full top-full flex-col text-center gap-y-10 text-base",
-                'p-5 bg-emerald-400 font-semibold md:bg-transparent rounded-xl text-white md:text-black',
+                'p-5 bg-emerald-400 font-semibold lg:bg-transparent rounded-xl text-white md:text-black',
               )}
             >
               {navData.map((data, index) => (
@@ -72,7 +71,7 @@ const Nav = () => {
                     'capitalize md:hover:underline md:hover:text-[#DD2D50] transition-all duration-300',
                     'md:py-2 md:px-3 md:rounded-xl',
                     'border-t border-b border-solid border-black   md:border-none',
-                    { 'text-orange-200 md:text-black md:bg-white': location.pathname == data.path }
+                    { 'text-orange-200 border-white md:border-transparent md:text-black md:bg-white': location.pathname == data.path }
                   )}
                 />
               ))}
