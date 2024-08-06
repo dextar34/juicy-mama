@@ -4,15 +4,17 @@ import { FaPhoneAlt } from "react-icons/fa";
 import ContactInfo from '../layer/ContactInfo';
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import PageTitle from '../layer/PageTitle';
 
 
 
 const Contact = () => {
   return (
     <div>
+      <PageTitle title={'Contact Us'}/>
       <Container>
         <div className="main mx-4">
-            <div className="contactCard  mt-[10vh] mx-auto max-w-[600px] ">
+            <div className="contactCard  mt-5 mx-auto max-w-[600px] ">
                   <div className="border-solid border-b border-black mx-6">
                     <p className='font-bold text-4xl py-2 text-center'>Contact Us</p>
                   </div>
